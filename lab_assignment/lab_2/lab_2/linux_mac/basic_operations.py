@@ -12,11 +12,11 @@ def str_to_int(string_number):
     # 	135
     # """
     # ===Modify codes below=================
-    result = None
-
+    result = int(string_number)
     # ======================================
 
     return result
+
 
 
 def str_to_float(string_number):
@@ -33,7 +33,7 @@ def str_to_float(string_number):
     # 	135.4567
     # """
     # ===Modify codes below=================
-    result = None
+    result = float(string_number)
 
     # ======================================
 
@@ -55,7 +55,7 @@ def number_to_str(float_number):
     # 	"-3.456"
     # """
     # ===Modify codes below=================
-    result = None
+    result = str(float_number)
 
     # ======================================
 
@@ -78,8 +78,7 @@ def add_string_number(string, float_number):
     # """
     # ===Modify codes below=================
 
-    result = None
-
+    result = string+str(float_number)
     # ======================================
     return result
 
@@ -100,7 +99,7 @@ def add_string_string(str_1, str_2):
     # """
     # ===Modify codes below=================
 
-    result = None
+    result = str_1+str_2
 
     # ======================================
     return result
@@ -124,7 +123,7 @@ def associative_law_add(a, b, c):
     # """
     # ===Modify codes below=================
 
-    result = None
+    result = (a+b)+c
 
     # ======================================
 
@@ -147,7 +146,7 @@ def associative_law_mutiple(a, b, c):
     # """
     # ===Modify codes below=================
 
-    result = None
+    result = (a*b)*c
 
     # ======================================
 
@@ -169,7 +168,7 @@ def distributive_law(a, b, c):
     # 	27
     # """
     # ===Modify codes below=================
-    result = None
+    result = a*(b+c)
     # ======================================
 
     return result
@@ -192,13 +191,13 @@ def exponent(base, power):
     # 	81
     # """
     # ===Modify codes below=================
-    result = None
     # ======================================
 
-    return result
+    return pow(base,power)
 
 
 def main():
+    ImportError
     print("Str_to_int Test")
     print(str_to_int("56"))  # Expected Result: 56
     print("====> ", str_to_int("27") == 27)  # Expected Result: True
